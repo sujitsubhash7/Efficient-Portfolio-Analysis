@@ -91,9 +91,9 @@ class MCSimulation:
         
         # Run the simulation of projecting stock prices 'nSim' number of times
         for n in range(self.nSim):
-# Commented out by Shishir to prevent text outputs appearign in the dashboard        
-#             if n % 10 == 0:
-#                 print(f"Running Monte Carlo simulation number {n}.")
+            # Commented out by Shishir to prevent text outputs appearign in the dashboard        
+            # if n % 10 == 0:
+            #     print(f"Running Monte Carlo simulation number {n}.")
         
             # Create a list of lists to contain the simulated values for each stock
             simvals = [[p] for p in last_prices]
@@ -137,7 +137,7 @@ class MCSimulation:
         # Use Pandas plot function to plot the return data
         plot_title = f"{self.nSim} Simulations of Cumulative Portfolio Return Trajectories Over the Next {self.nTrading} Trading Days."
         #return self.simulated_return.plot(legend=None,title=plot_title)
-        return self.simulated_return.hvplot(legend=None,title=plot_title, height=600, width=700)
+        return self.simulated_return.hvplot(legend=None,title=plot_title, height=600, width=1200)
     
     def plot_distribution(self):
         """
