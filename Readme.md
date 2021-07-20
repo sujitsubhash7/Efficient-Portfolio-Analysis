@@ -47,7 +47,6 @@ MCSimulation Package
 Anthony Tilotta, Abrar Aman, Ryan Dibeler, Shishir Suman, Sujit Subhash
 
 ## License 
-MIT License
 
 Copyright (c) [2021] [Anthony Tillotta, Abar Aman, Ryan Dibeler, Shishir Suman, Sujit Subhash]
 
